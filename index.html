@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bus to Frankston | Official Landing Page</title>
+    <meta
+      name="description"
+      content="Decades in the making. Guitar-soaked melodies, lush synths, and progressive beats finally on the road."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="wordmark" href="#top" id="top">The Bus to Frankston</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">Story</a>
+          <a href="#music">Music</a>
+          <a href="#shows">Live</a>
+          <a class="site-nav__cta" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="tag">Decades in the Making</p>
+          <h1 id="hero-title">
+            Guitar over Synth. Heart over Algorithm. All aboard The Bus to
+            Frankston.
+          </h1>
+          <p class="lede">
+            The Bus to Frankston is a long-awaited journey: expressive guitar,
+            dreamy synths, warm keys, and progressive beats brought to life with
+            modern production.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#music">Start Listening</a>
+            <a class="btn btn--quiet" href="#shows">See Live Updates</a>
+          </div>
+          <dl class="stats" aria-label="Band snapshot">
+            <div class="stats__item">
+              <dt>Roots</dt>
+              <dd>Decades of writing</dd>
+            </div>
+            <div class="stats__item">
+              <dt>Signature</dt>
+              <dd>Guitar + synth fusion</dd>
+            </div>
+            <div class="stats__item">
+              <dt>Now</dt>
+              <dd>Releases in motion</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="hero__art">
+          <div class="hero__frame">
+            <img
+              src="assets/hero-art.png"
+              width="1600"
+              height="900"
+              alt=""
+              decoding="async"
+            />
+          </div>
+          <figcaption class="hero__caption">A time capsule now in full color</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about" class="band">
+        <div class="band__inner band--split">
+          <div class="band__text">
+            <h2>The story behind the sound</h2>
+            <p class="pullquote" aria-hidden="true">Heart over algorithm.</p>
+            <p>
+              For years, these songs lived as demos, fragments, and unfinished
+              sessions. Each one carried a spark: melodic guitar lines, soulful
+              keys, and evolving electronic grooves.
+            </p>
+            <p>
+              With AI-assisted production, those unreleased ideas are finally
+              becoming fully realized tracks - immersive, nostalgic, and built
+              for late-night drives and loud systems.
+            </p>
+          </div>
+          <figure class="band__figure">
+            <div class="band__frame">
+              <img
+                src="assets/feature-art-alt-2.png"
+                width="1600"
+                height="900"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="music" class="panel">
+        <div class="panel__inner">
+          <div class="panel__head">
+            <h2>Listen to the journey</h2>
+            <p class="panel__soon">Coming soon</p>
+            <p>
+              Follow the project as new songs leave the vault and hit your
+              favorite platforms.
+            </p>
+          </div>
+          <ul class="stream-list" role="list">
+            <li><a href="#">Bandcamp</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">SoundCloud</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="shows" class="shows">
+        <div class="shows__inner">
+          <h2>Live and upcoming</h2>
+          <p class="shows__note">
+            Show announcements and ticket drops are on the way. Stay close for
+            first release dates.
+          </p>
+          <div class="ticket" role="status">
+            <span class="ticket__stub">Soon</span>
+            <span class="ticket__body">Next stop: your city</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__inner">
+          <h2>Bookings, press, and collaborations</h2>
+          <p>
+            Want The Bus to Frankston at your venue, event, or project? Send
+            through your details and let's make it happen.
+          </p>
+          <a class="btn btn--inverse" href="mailto:thebustofrankston@gmail.com"
+            >thebustofrankston@gmail.com</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> The Bus to Frankston</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
